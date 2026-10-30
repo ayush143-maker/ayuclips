@@ -1,6 +1,6 @@
 # ayuclips
 
-A single-page video-clipping interface for selecting a source video and preparing shorter segments. The page is in `index.html`, and its interface lists MP4, MOV, and WEBM as supported input types. The root also contains `vercel.json`; its role is not established here. The README does not establish the available processing or export behavior, so verify the implementation before relying on a completed clip or output format.
+A single-page video-clipping interface for selecting a source video and preparing shorter segments. The page is in `index.html`, and its interface lists MP4, MOV, and WEBM as supported input types. The root also contains `vercel.json`; inspect it to understand its role before changing deployment-related settings. The README does not establish the available processing or export behavior, so verify the implementation before relying on a completed clip or output format.
 
 ## Open locally
 
@@ -11,6 +11,12 @@ python -m http.server 8000
 ```
 
 Then visit <http://localhost:8000>.
+
+## Configuration and data handling
+
+This is a static page, and its HTML and scripts are delivered to the browser. Any values placed in client-side code or configuration are visible to visitors; do not put passwords, private API keys, or other secrets there. No `.env.example` is listed among the root files. If you add a configuration template, use placeholders rather than real credentials, and keep any real secret out of tracked files.
+
+The interface accepts a source video, but this README does not establish whether media stays in the browser, is uploaded, or how output is handled. Check the implementation before making privacy or data-retention claims. Use a sample video when reviewing the interface, and avoid including private media in tracked files. Review `vercel.json` before changing it, and do not add sensitive values to tracked configuration.
 
 ## Manual review checklist
 
@@ -46,6 +52,6 @@ Perform these checks on the clipping interface after changes; they are review st
 
 ## Personalizing the interface
 
-Edit visible labels and presentation in `index.html`. The page loads FFmpeg and JSZip from CDN URLs and references Google Fonts; preserve these URLs unless you intend to change those dependencies. No separate asset files are listed at the root, so inspect the HTML's actual references before adding or replacing assets, and keep relative paths aligned with their files. The purpose of `vercel.json` is not documented here; inspect it before making project-specific configuration changes.
+Edit visible labels and presentation in `index.html`. The page loads FFmpeg and JSZip from CDN URLs and references Google Fonts; preserve these URLs unless you intend to change those dependencies. No separate asset files are listed at the root, so inspect the HTML's actual references before adding or replacing assets, and keep relative paths aligned with their files. Inspect `vercel.json` before making project-specific configuration changes.
 
 Test with a short sample first. Verify the implementation and browser behavior before relying on privacy or performance claims for large videos.
