@@ -8,7 +8,7 @@ Open `index.html` in a modern browser, or serve the project folder over HTTP:
 
     python -m http.server 8000
 
-Then visit http://localhost:8000.
+Then visit http://localhost:8000. After editing the page, reload it and check the source-selection interface with a short sample in a format the browser can decode.
 
 ## Working with video
 
