@@ -24,6 +24,16 @@ Use these actions after editing the page; they are review steps, not verified re
 - [ ] Review the interface at narrow and wide viewport sizes. Check that source selection, controls, and text remain visible and usable.
 - [ ] If a sample fails to load, check whether the browser supports that file before attributing the issue to the page.
 
+## Browser and platform reliability checklist
+
+Use these checks after page changes to review browser and platform behavior. They are a checklist, not verified compatibility results.
+
+- [ ] Identify the current browsers and platforms relevant to this page's HTML and JavaScript, then open the page in those browsers. Check the source-selection and clipping interface, and review the implementation before relying on media-processing or export behavior.
+- [ ] Open the browser developer tools and inspect the Console and Network panel. Look for JavaScript errors, failed requests, and resources that do not load; distinguish a browser's inability to decode a sample from a page or request failure.
+- [ ] Check local references in `index.html` against files at the expected paths. Check remote requests for the listed FFmpeg and JSZip CDN scripts and Google Fonts, and investigate failed or blocked requests rather than assuming those resources loaded.
+- [ ] Compare the page at mobile and desktop viewport sizes. Check that source selection, clipping controls, and text remain visible and usable at both sizes; do not treat a resized desktop view as proof of testing on a mobile device.
+- [ ] Record the browsers, devices or viewport sizes, and any issues actually reviewed before making compatibility claims. Do not describe the page as tested based on this checklist alone.
+
 ## Accessibility review checklist
 
 Perform these checks on the clipping interface after changes; they are review steps, not a statement that the page has passed them:
