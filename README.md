@@ -4,7 +4,7 @@ A browser-based video clipping interface for preparing shorter segments from lon
 
 ## Open locally
 
-Open `index.html` in a modern browser, or serve the project folder over HTTP:
+Open `index.html` in a browser, or serve the project folder over HTTP:
 
     python -m http.server 8000
 
