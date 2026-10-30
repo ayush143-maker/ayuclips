@@ -10,7 +10,17 @@ Open `index.html` in a browser, or serve the project folder over HTTP:
 python -m http.server 8000
 ```
 
-Then visit <http://localhost:8000>. After editing the page, reload it and check source selection with a short sample in a format the browser can decode. If the sample does not load, check whether the browser supports that file.
+Then visit <http://localhost:8000>.
+
+## Manual review checklist
+
+Use these actions after editing the page; they are not verified results.
+
+- Open the known entry page, `index.html`, and review the source-selection and clipping interface.
+- Try selecting a short sample in a listed format that the browser can decode. Observe the interface response and review the implementation before assuming a format is processed or exported successfully.
+- Inspect image, media, and other resource references in the HTML. Check local paths against the files they reference and note external resources that are unavailable.
+- Review the interface at narrow and wide viewport sizes. Check that source selection, controls, and text remain visible and usable.
+- If a sample fails to load, check whether the browser supports that file before attributing the issue to the page.
 
 ## Personalizing the interface
 
