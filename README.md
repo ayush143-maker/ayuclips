@@ -4,11 +4,11 @@ A browser-based video clipping tool for preparing shorter segments from longer v
 
 ## Open locally
 
-Open `index.html` in a modern browser, or serve the project over HTTP:
+Open `index.html` in a modern browser, or serve the project folder over HTTP:
 
     python -m http.server 8000
 
-Visit http://localhost:8000.
+Then visit http://localhost:8000.
 
 ## Working with video
 
