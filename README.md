@@ -52,3 +52,9 @@ These are review steps, not verified results or performance measurements:
 - [ ] Confirm the published files include the intended root page and required local assets, and review `vercel.json` rather than assuming its effect.
 - [ ] After publishing, preview the page and check its visible behavior, links or resources, and browser errors.
 - [ ] Review changed files, relative references, and README claims before publishing.
+
+## Final release review
+
+- Check that `index.html` still points to the intended application entry module before publishing.
+- Test with network access available and keep a sensible fallback for externally loaded resources.
+- Review the published result once on a narrow screen and once on a wider screen; treat this as a release check, not an automated test report.
