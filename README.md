@@ -22,6 +22,16 @@ Use these actions after editing the page; they are not verified results.
 - Review the interface at narrow and wide viewport sizes. Check that source selection, controls, and text remain visible and usable.
 - If a sample fails to load, check whether the browser supports that file before attributing the issue to the page.
 
+## Accessibility review checklist
+
+Perform these checks on the clipping interface after changes; they are review steps, not a statement that the page has passed them:
+
+- Use only the keyboard to move through source selection and any clipping controls present in `index.html`. Check that each control can be reached and operated, and that the current focus is clearly visible.
+- Check that file-selection, playback, and clipping controls have meaningful labels and instructions. Confirm that status or error messages are understandable without relying only on visual changes.
+- Check text and control contrast against their backgrounds, including labels over any video or preview area.
+- If the page uses images, check that informative images have suitable alternatives and decorative images do not add redundant announcements.
+- If transitions or other motion are used, check that they respect the user's reduced-motion preference.
+
 ## Personalizing the interface
 
 Edit visible labels and presentation in `index.html`. The page loads FFmpeg and JSZip from CDN URLs and references Google Fonts; preserve those URLs unless you intend to change those dependencies. No separate asset files are listed at the root, so check the existing HTML references before adding or replacing assets, and keep relative paths aligned with their files. The purpose of `vercel.json` is not documented here; inspect it before making project-specific configuration changes.
