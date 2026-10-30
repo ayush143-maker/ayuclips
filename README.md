@@ -1,6 +1,6 @@
 # ayuclips
 
-A browser-based video clipping tool for preparing shorter segments from longer videos. The interface supports selecting a source video and lists MP4, MOV, and WEBM as supported input types.
+A browser-based video clipping interface for preparing shorter segments from longer videos. Visitors can select a source video; the interface lists MP4, MOV, and WEBM as supported input types. The README does not establish what processing or export behaviour is available, so verify the implementation before relying on a completed clip or output format.
 
 ## Open locally
 
